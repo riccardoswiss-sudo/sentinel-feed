@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "updated": "2026-05-09",
+  "threats": [
+    {"pkg": "com.mspy.client", "name": "mSpy", "risk": "HIGH"},
+    {"pkg": "com.mspy.lite", "name": "mSpy Lite", "risk": "HIGH"},
+    {"pkg": "com.flexispy.android", "name": "FlexiSpy", "risk": "HIGH"},
+    {"pkg": "com.cerberus.client", "name": "Cerberus", "risk": "HIGH"},
+    {"pkg": "com.hoverwatch.client", "name": "Hoverwatch", "risk": "HIGH"},
+    {"pkg": "com.spyera", "name": "SpyEra", "risk": "HIGH"},
+    {"pkg": "com.thetruthspy.android", "name": "TheTruthSpy", "risk": "HIGH"},
+    {"pkg": "com.highstermobile.android", "name": "Highster", "risk": "HIGH"},
+    {"pkg": "com.cocospy.app", "name": "Cocospy", "risk": "HIGH"},
+    {"pkg": "com.clevguard.android", "name": "ClevGuard", "risk": "HIGH"},
+    {"pkg": "com.umobix.app", "name": "uMobix", "risk": "HIGH"},
+    {"pkg": "com.spyzie.android", "name": "Spyzie", "risk": "HIGH"},
+    {"pkg": "com.eyezy.app", "name": "Eyezy", "risk": "HIGH"},
+    {"pkg": "com.xnspy.app", "name": "Xnspy", "risk": "HIGH"},
+    {"pkg": "com.spyhuman.app", "name": "SpyHuman", "risk": "HIGH"},
+    {"pkg": "com.minspy.app", "name": "Minspy", "risk": "HIGH"},
+    {"pkg": "com.spyic.app", "name": "Spyic", "risk": "HIGH"},
+    {"pkg": "com.neatspy.app", "name": "Neatspy", "risk": "HIGH"},
+    {"pkg": "com.spyfone.app", "name": "SpyFone", "risk": "HIGH"},
+    {"pkg": "com.letmespy.app", "name": "LetMeSpy", "risk": "HIGH"},
+    {"pkg": "com.pctatttletale.app", "name": "pcTattletale", "risk": "HIGH"}
+  ]
+}
