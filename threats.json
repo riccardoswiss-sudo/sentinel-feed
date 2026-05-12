@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "promo": false,
+  "promo": true,
   "updated": "2026-05-09",
   "threats": [
     {"pkg": "com.mspy.client", "name": "mSpy", "risk": "HIGH"},
