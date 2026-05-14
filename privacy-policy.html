@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythos Sentinel AI — Privacy Policy</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+               max-width: 800px; margin: 0 auto; padding: 20px; background: #0a0e1a; color: #c0d0e0; line-height: 1.7; }
+        h1 { color: #00e676; font-size: 24px; border-bottom: 2px solid #00e676; padding-bottom: 10px; }
+        h2 { color: #00e5ff; font-size: 18px; margin-top: 30px; }
+        a { color: #00e676; }
+        .updated { color: #888; font-size: 13px; }
+        .highlight { background: #112233; padding: 15px; border-left: 3px solid #00e676; margin: 15px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<h1>Mythos Sentinel AI — Privacy Policy</h1>
+<p class="updated">Ultimo aggiornamento: 14 maggio 2026</p>
+
+<div class="highlight">
+    <strong>In sintesi:</strong> Mythos Sentinel AI esegue tutte le analisi localmente sul tuo dispositivo.
+    Nessun dato personale viene raccolto, trasmesso o condiviso con terze parti.
+</div>
+
+<h2>1. Informazioni Generali</h2>
+<p>Mythos Sentinel AI ("l'App") è sviluppata da Mythos Labs ed è progettata come sistema di allerta precoce
+per indicatori di compromissione mobile. L'App monitora segnali tecnici sul dispositivo e invia alert
+quando rileva combinazioni anomale compatibili con possibili attività di sorveglianza.</p>
+
+<h2>2. Dati Raccolti</h2>
+<p><strong>Nessun dato personale viene raccolto dall'App.</strong></p>
+<p>L'App analizza esclusivamente informazioni tecniche del dispositivo, tra cui:</p>
+<ul>
+    <li>Stato della connessione di rete (TLS, DNS, latenza)</li>
+    <li>Informazioni sulle celle radio (per rilevamento anomalie)</li>
+    <li>App installate e relativi permessi</li>
+    <li>Servizi di accessibilità attivi</li>
+    <li>Stato del sistema (temperatura, wakelock, servizi)</li>
+    <li>Dispositivi Bluetooth associati</li>
+    <li>Reti WiFi nelle vicinanze</li>
+</ul>
+<p>Tutte queste analisi avvengono <strong>interamente sul dispositivo</strong>. Nessuna di queste
+informazioni viene trasmessa a server esterni.</p>
+
+<h2>3. Dati Trasmessi</h2>
+<p>L'App effettua un'unica connessione di rete per scaricare la lista aggiornata delle minacce note
+(threat feed) da un server GitHub Pages. Questa connessione:</p>
+<ul>
+    <li>Non trasmette alcun dato del dispositivo</li>
+    <li>Scarica solo un file JSON con l'elenco delle app note come spyware</li>
+    <li>Avviene tramite HTTPS</li>
+</ul>
+
+<h2>4. Archiviazione Locale</h2>
+<p>L'App salva localmente sul dispositivo:</p>
+<ul>
+    <li>Storico delle scansioni (score e report)</li>
+    <li>Baseline del dispositivo (valori di riferimento per rilevare anomalie)</li>
+    <li>Stato della licenza Pro</li>
+    <li>Log di debug (ultime 24 ore)</li>
+</ul>
+<p>Questi dati sono accessibili solo dall'App e vengono cancellati se l'App viene disinstallata.</p>
+
+<h2>5. Permessi</h2>
+<p>L'App richiede permessi avanzati per eseguire le analisi di sicurezza. Ogni permesso è utilizzato
+esclusivamente per la funzione di monitoraggio indicata:</p>
+<ul>
+    <li><strong>ACCESS_FINE_LOCATION</strong> — Lettura informazioni celle radio per rilevamento IMSI catcher</li>
+    <li><strong>READ_PHONE_STATE</strong> — Analisi stato rete cellulare</li>
+    <li><strong>QUERY_ALL_PACKAGES</strong> — Scansione app installate per rilevamento spyware</li>
+    <li><strong>PACKAGE_USAGE_STATS</strong> — Analisi comportamento app in background</li>
+    <li><strong>BLUETOOTH_CONNECT</strong> — Rilevamento dispositivi tracker sospetti</li>
+    <li><strong>POST_NOTIFICATIONS</strong> — Invio alert di sicurezza</li>
+</ul>
+<p>Nessun permesso viene utilizzato per raccogliere o trasmettere dati personali.</p>
+
+<h2>6. Condivisione con Terze Parti</h2>
+<p><strong>Non condividiamo alcun dato con terze parti.</strong> L'App non contiene SDK pubblicitari,
+tracker analytics o strumenti di profilazione.</p>
+
+<h2>7. Sicurezza</h2>
+<p>I dati locali sono protetti dalla sandbox Android. La build release utilizza offuscamento R8/ProGuard.
+Il backup automatico del dispositivo è disabilitato per proteggere i dati sensibili dell'App.</p>
+
+<h2>8. Minori</h2>
+<p>L'App non è destinata a minori di 18 anni e non raccoglie intenzionalmente dati di minori.</p>
+
+<h2>9. Modifiche</h2>
+<p>Eventuali modifiche a questa Privacy Policy saranno pubblicate su questa pagina con la data
+di aggiornamento.</p>
+
+<h2>10. Contatti</h2>
+<p>Per domande sulla privacy, contattare:<br>
+<strong>Email:</strong> <a href="mailto:mythoslabs.sentinel@gmail.com">mythoslabs.sentinel@gmail.com</a></p>
+
+<p style="margin-top: 40px; color: #556677; font-size: 12px; text-align: center;">
+    © 2026 Mythos Labs — Tutti i diritti riservati
+</p>
+
+</body>
+</html>
