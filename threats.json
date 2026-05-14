@@ -1,7 +1,7 @@
 {
   "version": 2,
   "promo": true,
-  "updated": "2026-05-13",
+  "updated": "2026-05-14",
   "threats": [
     {"pkg": "com.mspy.client", "name": "mSpy", "risk": "HIGH"},
     {"pkg": "com.mspy.lite", "name": "mSpy Lite", "risk": "HIGH"},
@@ -32,8 +32,7 @@
     {"pkg": "com.phonesheriff.android", "name": "PhoneSheriff", "risk": "HIGH"},
     {"pkg": "com.auto.forward", "name": "Auto Forward", "risk": "HIGH"},
     {"pkg": "com.spybubble.app", "name": "SpyBubble", "risk": "HIGH"},
-    {"pkg": "com.trustbastion", "name": "TrustBastion (RAT)", "risk": "HIGH"},
-    {"pkg": "org.torproject.android", "name": "Tor (anonimizzatore)", "risk": "MEDIUM"},
+    {"pkg": "com.trustbastion", "name": "TrustBastion RAT", "risk": "HIGH"},
     {"pkg": "com.ttspy.app", "name": "TTSpy", "risk": "HIGH"},
     {"pkg": "com.spymaster.pro", "name": "SpyMaster Pro", "risk": "HIGH"},
     {"pkg": "com.onespy.app", "name": "OneSpy", "risk": "HIGH"},
@@ -43,10 +42,5 @@
     {"pkg": "com.guestspy.app", "name": "GuestSpy", "risk": "HIGH"},
     {"pkg": "com.copy9.app", "name": "Copy9", "risk": "HIGH"},
     {"pkg": "com.shadow.spy", "name": "Shadow Spy", "risk": "HIGH"}
-  ],
-  "suspicious_permissions": [
-    "android.permission.RECEIVE_SMS+android.permission.BIND_ACCESSIBILITY_SERVICE",
-    "android.permission.RECORD_AUDIO+android.permission.CAMERA+android.permission.ACCESS_FINE_LOCATION",
-    "android.permission.READ_SMS+android.permission.SEND_SMS+android.permission.INTERNET"
   ]
 }
