@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "updated": "2026-05-16",
+  "blacklist_packages": [
+    "com.mspy.client",
+    "com.mspy.lite",
+    "com.flexispy.android",
+    "com.hoverwatch.client",
+    "com.spyera",
+    "com.thetruthspy.android",
+    "com.cocospy.app",
+    "com.clevguard.android",
+    "com.umobix.app",
+    "com.eyezy.app",
+    "com.xnspy.app"
+  ],
+  "suspicious_ports": [4444, 5555, 9090, 1337, 31337],
+  "dns_trusted_ranges": [
+    "142.", "172.", "104.", "157.", "31.", "179.", "185.",
+    "129.", "69.", "57.", "150.", "20.", "13.", "17.",
+    "192.178.", "108.", "216."
+  ],
+  "detection_notes": "Feed iniziale v1. Aggiornamenti automatici ogni 6 ore."
+}
