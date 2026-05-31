@@ -12,83 +12,71 @@
 <body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:900px;margin:0 auto;padding:24px;background:#05070a;color:#c0d0e0;line-height:1.7">
 
 <h1 style="color:#00e676">Privacy Policy</h1>
-<p><strong>Ultimo aggiornamento:</strong> 19 maggio 2026</p>
+<p><strong>Ultimo aggiornamento:</strong> 31 Maggio 2026</p>
 
 <div style="background:#102018;border-left:3px solid #00e676;padding:16px;margin:20px 0;border-radius:6px">
-  <strong>In sintesi:</strong> Mythos Sentinel esegue le analisi sul dispositivo.
-  I report di scansione, gli indicatori rilevati e lo storico rischio non vengono inviati a server Mythos Sentinel.
+  <strong>DICHIARAZIONE DI TRASPARENZA (DISCLOSURE PROMINENTE):</strong> Mythos Sentinel esegue tutte le analisi forensi esclusivamente sul dispositivo. 
+  I report di scansione, l'elenco delle app installate e i dati tecnici rilevati NON vengono mai inviati a server esterni o condivisi con terze parti.
 </div>
 
 <h2>1. Informazioni generali</h2>
-<p>Mythos Sentinel è un'app Android sviluppata come sistema di allerta precoce per indicatori di possibile compromissione mobile, spyware, intercettazione di rete e anomalie di sistema.</p>
+<p>Mythos Sentinel è un'app Android sviluppata come sistema di allerta precoce per rilevare indicatori di compromissione mobile, spyware, intercettazione di rete e anomalie di sistema. La privacy dell'utente è il pilastro fondamentale del nostro software.</p>
 
 <h2>2. Dati processati localmente</h2>
-<p>L'app non richiede registrazione e non invia a Mythos Sentinel nome, email, numero di telefono, report di scansione o contenuto delle comunicazioni. Per funzionare, però, processa localmente informazioni tecniche che Android e Google Play considerano sensibili quando associate a un dispositivo.</p>
+<p>L'app non richiede registrazione e non raccoglie dati identificativi (nome, email, telefono). Per fornire i suoi servizi di protezione, processa esclusivamente in locale i seguenti dati tecnici:</p>
 
 <ul>
-  <li>Stato della connessione di rete, TLS, Certificate Transparency, DNS, proxy, VPN e routing.</li>
-  <li>Informazioni sulle celle radio e sulle SIM attive.</li>
-  <li>Elenco delle app installate, package name, permessi e servizi sensibili.</li>
-  <li>Uso app e indicatori AppOps, inclusi accessi a sensori quando disponibili dalle API Android.</li>
-  <li>Stato del sistema: SELinux, bootloader, overlay, servizi, wakelock, temperatura e socket disponibili.</li>
-  <li>Dispositivi Bluetooth associati, reti Wi-Fi e dispositivi rilevati sulla rete locale.</li>
-  <li>Clipboard e altri segnali locali usati esclusivamente per generare alert sul dispositivo.</li>
+  <li>Stato della connessione di rete (DNS, proxy, routing) per rilevare intercettazioni.</li>
+  <li>Informazioni tecniche sulle celle radio e SIM attive (per rilevamento IMSI catcher).</li>
+  <li>Elenco delle app installate (Package Name) per il confronto con blacklist di spyware.</li>
+  <li>Statistiche di utilizzo app (AppOps) per identificare accessi non autorizzati a microfono/camera.</li>
+  <li>Stato di integrità del sistema (SELinux, bootloader, servizi attivi).</li>
 </ul>
 
-<p>Queste informazioni sono analizzate dall'app sul dispositivo dell'utente. Non vengono inviate a server Mythos Sentinel.</p>
+<p><strong>Nessuna di queste informazioni lascia mai il dispositivo dell'utente.</strong></p>
 
 <h2>3. Connessioni esterne</h2>
-<p>L'app può effettuare connessioni esterne limitate per funzioni di sicurezza:</p>
+<p>L'app effettua connessioni esterne limitate esclusivamente per:</p>
 <ul>
-  <li>Download del threat feed pubblico da GitHub Pages.</li>
-  <li>Download delle regole remote pubbliche da GitHub Pages.</li>
-  <li>Controlli tecnici HTTPS/TLS verso endpoint pubblici, ad esempio per verificare certificati e Certificate Transparency.</li>
-  <li>Servizi Google Play, se e quando vengono attivate funzioni di acquisto o licenza tramite Google Play.</li>
+  <li>Download della blacklist pubblica e delle regole di rilevamento da GitHub Pages.</li>
+  <li>Verifica dei certificati HTTPS e Certificate Transparency tramite endpoint pubblici.</li>
+  <li>Gestione degli acquisti e della licenza tramite i servizi ufficiali di Google Play.</li>
 </ul>
-<p>Queste connessioni non trasmettono report di scansione o risultati forensi a Mythos Sentinel.</p>
 
 <h2>4. Archiviazione locale</h2>
-<p>L'app può salvare sul dispositivo:</p>
+<p>L'app salva nella sua sandbox privata:</p>
 <ul>
-  <li>Storico delle scansioni, punteggi e report.</li>
-  <li>Baseline comportamentali e tecniche usate per rilevare anomalie successive.</li>
-  <li>Memoria degli alert e stato Hunt Mode.</li>
-  <li>Stato della licenza PRO o coupon.</li>
-  <li>Log tecnici locali utili alla diagnostica.</li>
+  <li>Storico locale dei punteggi di rischio e report tecnici.</li>
+  <li>Baseline del dispositivo (Punto Zero) usata per rilevare mutazioni future.</li>
+  <li>Stato della licenza o del coupon attivato.</li>
 </ul>
-<p>Il backup automatico Android dell'app è disabilitato. I dati locali vengono cancellati disinstallando l'app o usando le impostazioni Android per cancellare i dati dell'app.</p>
+<p>I dati vengono eliminati completamente alla disinstallazione dell'app.</p>
 
-<h2>5. Permessi Android</h2>
+<h2>5. Permessi Android e Utilizzo</h2>
+<p>Mythos Sentinel richiede i seguenti permessi per scopi di sicurezza esclusivi:</p>
 <ul>
-  <li><strong>QUERY_ALL_PACKAGES</strong>: scansione delle app installate contro blacklist e regole di rischio.</li>
-  <li><strong>PACKAGE_USAGE_STATS</strong>: analisi del comportamento app e degli eventi recenti.</li>
-  <li><strong>READ_PHONE_STATE</strong>: informazioni su rete cellulare, SIM e celle radio.</li>
-  <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong>: necessarie per alcune API Android relative a celle radio, Wi-Fi e Bluetooth.</li>
-  <li><strong>ACCESS_BACKGROUND_LOCATION</strong>: dichiarata per funzioni di analisi che possono richiedere dati radio/Wi-Fi anche fuori dal foreground, quando concesso dal sistema.</li>
-  <li><strong>BLUETOOTH_CONNECT</strong>: rilevamento dispositivi Bluetooth associati e possibili tracker.</li>
-  <li><strong>POST_NOTIFICATIONS</strong>: invio di alert di sicurezza.</li>
-  <li><strong>INTERNET / ACCESS_NETWORK_STATE / ACCESS_WIFI_STATE</strong>: controlli di rete, threat feed, regole remote e analisi Wi-Fi.</li>
+  <li><strong>QUERY_ALL_PACKAGES</strong>: Necessario per scansionare l'elenco delle app alla ricerca di software malevolo. L'analisi è confinata alla memoria locale.</li>
+  <li><strong>PACKAGE_USAGE_STATS</strong>: Utilizzato per rilevare l'attività di processi spia in background.</li>
+  <li><strong>READ_PHONE_STATE</strong>: Necessario per analizzare l'identità tecnica della rete cellulare.</li>
+  <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong>: Richiesti dalle API Android per l'analisi delle reti Wi-Fi e delle celle radio. <strong>L'app non traccia e non memorizza la posizione geografica dell'utente.</strong></li>
+  <li><strong>BLUETOOTH_CONNECT</strong>: Utilizzato per identificare la presenza di tracker Bluetooth malevoli nelle vicinanze.</li>
+  <li><strong>POST_NOTIFICATIONS</strong>: Necessario per inviare avvisi immediati in caso di minaccia rilevata.</li>
+  <li><strong>INTERNET</strong>: Usato per il download delle definizioni di sicurezza e la verifica della rete.</li>
 </ul>
 
-<h2>6. Nessuna pubblicità, analytics o profilazione</h2>
-<p>Mythos Sentinel non integra SDK pubblicitari, tracker analytics, pixel di profilazione o strumenti di marketing comportamentale.</p>
+<h2>6. Nessuna pubblicità o profilazione</h2>
+<p>Mythos Sentinel non contiene pubblicità, non usa SDK di analytics e non effettua alcuna profilazione dell'utente o dei suoi comportamenti.</p>
 
-<h2>7. Condivisione con terze parti</h2>
-<p>Mythos Sentinel non vende, non affitta e non condivide report di scansione, evidenze locali o dati personali con terze parti.</p>
+<h2>7. Esportazione dei dati</h2>
+<p>L'utente è l'unico proprietario dei propri report. L'esportazione di un report avviene solo su comando esplicito dell'utente tramite il sistema di condivisione standard di Android.</p>
 
-<h2>8. Esportazione volontaria dei report</h2>
-<p>Se l'utente esporta o condivide manualmente un report, la destinazione viene scelta dall'utente tramite le funzioni Android.</p>
+<h2>8. Minori</h2>
+<p>L'app non è destinata a minori di 18 anni. Non raccogliamo dati di alcun tipo, inclusi quelli di minori.</p>
 
-<h2>9. Minori</h2>
-<p>Mythos Sentinel non è destinata a minori di 18 anni e non raccoglie consapevolmente dati di minori.</p>
-
-<h2>10. Modifiche</h2>
-<p>Eventuali modifiche a questa Privacy Policy saranno pubblicate su questa pagina con la data di aggiornamento.</p>
-
-<h2>11. Contatti</h2>
+<h2>9. Contatti</h2>
 <p>
-  Per richieste privacy: <a href="mailto:privacy@mythossentinel.com" style="color:#00e676">privacy@mythossentinel.com</a><br>
-  Per assistenza generale: <a href="mailto:support@mythossentinel.com" style="color:#00e676">support@mythossentinel.com</a>
+  Per questioni relative alla privacy: <a href="mailto:privacy@mythossentinel.com" style="color:#00e676">privacy@mythossentinel.com</a><br>
+  Email di supporto tecnico: <a href="mailto:riccardo.swiss@gmail.com" style="color:#00e676">riccardo.swiss@gmail.com</a>
 </p>
 
 <p style="margin-top:40px;color:#778899;font-size:13px;text-align:center">
