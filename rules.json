@@ -1,24 +1,6 @@
 {
-  "version": 1,
-  "updated": "2026-05-16",
-  "blacklist_packages": [
-    "com.mspy.client",
-    "com.mspy.lite",
-    "com.flexispy.android",
-    "com.hoverwatch.client",
-    "com.spyera",
-    "com.thetruthspy.android",
-    "com.cocospy.app",
-    "com.clevguard.android",
-    "com.umobix.app",
-    "com.eyezy.app",
-    "com.xnspy.app"
-  ],
-  "suspicious_ports": [4444, 5555, 9090, 1337, 31337],
-  "dns_trusted_ranges": [
-    "142.", "172.", "104.", "157.", "31.", "179.", "185.",
-    "129.", "69.", "57.", "150.", "20.", "13.", "17.",
-    "192.178.", "108.", "216."
-  ],
-  "detection_notes": "Feed iniziale v1. Aggiornamenti automatici ogni 6 ore."
+  "v": 2,
+  "updated": "2026-06-03",
+  "sig": "eu/dZ4N2mBOBD395nRvmeHXMOcVx9XSKFGUe2ImcqyRqJD7BT9Ztq6BvsD0d3Dh2BZhLZrwgOKios4HQPp2Oo81Bta904nT/vSZkmY8nLIK2JLSDpVsAJPPXpAXyKQXCAsKcj2YUPi1g00+8INNORyNk2OwdkRpzfNF/fYoyyV9l+eAny0d/R9tQJfTr4p4vKTuH/6YLmjF7+JQBIIbPcXbUqs0ZGHjM0XXDzYO7+Z0wMPPrZEWSydKYGXqF/cuiklNn9pap8JH3LW9uym5gaIx3zWfMdhZnsn3Piz3mbqjlZJmqkKgLBp81/cB5QlL1laM8fOUH4OqmUv/9GJy1OQ==",
+  "p": "{\"blacklist_packages\":[\"com.mspy.client\",\"com.mspy.lite\",\"com.flexispy.android\",\"com.cerberus.client\",\"com.hoverwatch.client\",\"com.spyera\",\"com.thetruthspy.android\",\"com.highstermobile.android\",\"com.cocospy.app\",\"com.clevguard.android\",\"com.clevguard.kidsguard\",\"com.umobix.app\",\"com.spyzie.android\",\"com.eyezy.app\",\"com.xnspy.app\",\"com.spyhuman.app\",\"com.minspy.app\",\"com.spyic.app\",\"com.neatspy.app\",\"com.spyfone.app\",\"com.letmespy.app\",\"com.pctatttletale.app\",\"com.parentalcontrol.kidsguard\",\"com.alospy.app\",\"com.iKeyMonitor\",\"com.monitoring.app\",\"com.phonesheriff.android\",\"com.auto.forward\",\"com.spybubble.app\",\"com.trustbastion\",\"com.ttspy.app\",\"com.spymaster.pro\",\"com.onespy.app\",\"com.theonespy.app\",\"com.mobile.tracker.free\",\"com.androidmonitor.app\",\"com.guestspy.app\",\"com.copy9.app\",\"com.shadow.spy\"],\"detection_notes\":\"Rules v2 \\u2014 firma RSA-SHA256. Aggiornamenti automatici ogni 6 ore.\",\"dns_trusted_ranges\":[\"8.8.\",\"8.4.\",\"1.1.\",\"1.0.\",\"142.\",\"172.\",\"104.\",\"157.\",\"31.\",\"179.\",\"185.\",\"129.\",\"69.\",\"57.\",\"150.\",\"20.\",\"13.\",\"17.\",\"192.178.\",\"108.\",\"216.\"],\"ioc_domains\":[],\"score_weights\":{\"appops_call_context\":10,\"appops_call_unattributed\":25,\"appops_max_no_live\":50,\"appops_mic_bg\":100,\"appops_mic_now_known\":35,\"appops_mic_now_unknown\":65,\"stealth_max\":50,\"stealth_red\":25,\"stealth_warn\":10},\"suspicious_ports\":[1080,1234,1337,3128,4444,5555,6666,8080,8888,9050,9090,31337],\"version\":2}"
 }
